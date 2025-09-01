@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #6a1b9a;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 70px;
+}
+
+header {
+  padding: 15px;
+}
+
+.form-container {
+  background-color: #6a1b9a;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 100px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: 800;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #9b4dca;
+  color: white;
+  text-align: center;
+}
+
+form input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px ;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffcc00;
+  color: #6a1b9a;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #e6b800;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* espaço pro menu fixo */
+}
+
+
+/* Folhas */
+.folha-esquerda, .folha-direita {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.folha-esquerda {
+  position: absolute;
+  bottom: 0;
+  left: -20px;  /* mais escondida */
+  width: 300px;
+  opacity: 0.9;
+  z-index: 1;;
+}
+
+.folha-direita {
+  position: absolute;
+  bottom: 500px;  /* mais pra cima */
+  right: -50px;
+  width: 200px;
+  opacity: 0.9;
+  z-index: 1;
+  transform: scaleX(-1);
+}
